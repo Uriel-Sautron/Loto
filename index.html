@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center w-screen h-screen bg-gray-200 text-gray-700">
+
+    <!-- Component Start -->
+    <h1 class="font-bold text-2xl">Bonne chance :)</h1>
+    <form class="flex flex-col bg-white rounded shadow-lg p-12 mt-12" action="">
+        <label class="font-semibold text-xs" for="firstname">Prénom</label>
+        <input id="firstname" class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text">
+
+        <label class="font-semibold text-xs" for="lastname">Nom</label>
+        <input id="lastname" class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text">
+
+        <label class="font-semibold text-xs" for="email">Email</label>
+        <input id="email" class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text">
+
+        <label class="font-semibold text-xs" for="lotoNumbers">Numéros</label>
+        <div class="flex flex-row justify-around ">
+            <input id="number1" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="49">
+            <input id="number2" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="49">
+            <input id="number3" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="49">
+        </div>
+        <div class="flex flex-row justify-around ">
+            <input id="number4" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="49">
+            <input id="number5" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="49">
+            <input id="number6" class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="number" min="1" max="10">
+        </div>
+
+        <input id="submit" class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700" type="submit" value="Jouer" />
+
+    </form>
+    <!-- Component End  -->
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
